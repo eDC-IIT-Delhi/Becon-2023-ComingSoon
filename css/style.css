@@ -1,5 +1,5 @@
 /* Utilities CSS */
-.red-bor {
+/* .red-bor {
   border: 2px solid red;
 }
 
@@ -13,8 +13,16 @@
 
 .black-bor {
   border: 2px solid black;
+} */
+
+
+/* .w-vw{
+  width: 100vw;
 }
 
+.h-vh{
+  height: 100vh;
+} */
 
 .covering {
   height: 100%;
@@ -36,8 +44,16 @@
   background-color: tomato;
 }
 
-.mid {
+#sponsers {
   background-color: pink;
+}
+
+#speakers{
+  background-color: bisque;
+}
+
+#events{
+  background-color: blueviolet;
 }
 
 .ending {
@@ -49,3 +65,23 @@
 
 /* styles */
 .opening {}
+
+
+
+/* Sponser Page CSS */
+.boxes{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+
+.box{
+  width: 150px;
+  height: 150px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  margin: 8px 0;
+}
