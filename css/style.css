@@ -1,34 +1,51 @@
-
 /* Utilities CSS */
-.red-bor{
+.red-bor {
   border: 2px solid red;
 }
-.green-bor{
+
+.green-bor {
   border: 2px solid green;
 }
-.blue-bor{
+
+.blue-bor {
   border: 2px solid blue;
 }
-.black-bor{
+
+.black-bor {
   border: 2px solid black;
 }
 
 
-
-
-.slide{
-  height: 100vh;
-  width: 100vw;
+.covering {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
 }
 
-.opening{
+.slide {
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+
+.opening {
   background-color: tomato;
 }
 
-.mid{
+.mid {
   background-color: pink;
 }
 
-.ending{
+.ending {
   background-color: teal;
 }
+
+
+
+
+/* styles */
+.opening {}
