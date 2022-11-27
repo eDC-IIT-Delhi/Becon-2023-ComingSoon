@@ -1,0 +1,34 @@
+
+/* Utilities CSS */
+.red-bor{
+  border: 2px solid red;
+}
+.green-bor{
+  border: 2px solid green;
+}
+.blue-bor{
+  border: 2px solid blue;
+}
+.black-bor{
+  border: 2px solid black;
+}
+
+
+
+
+.slide{
+  height: 100vh;
+  width: 100vw;
+}
+
+.opening{
+  background-color: tomato;
+}
+
+.mid{
+  background-color: pink;
+}
+
+.ending{
+  background-color: teal;
+}
