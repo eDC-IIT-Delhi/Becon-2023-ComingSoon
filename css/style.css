@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900');
 /* Utilities CSS */
 /* .red-bor {
   border: 2px solid red;
@@ -23,6 +24,18 @@
 .h-vh{
   height: 100vh;
 } */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar{
+  display: none;
+}
+*{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 
 .covering {
   height: 100%;
@@ -38,6 +51,8 @@
   width: 100%;
   scroll-snap-align: start;
   flex-shrink: 0;
+  transition: 1s ease-in;
+  scroll-behavior: smooth;
 }
 
 .opening {
@@ -84,4 +99,63 @@
   border: 2px solid grey;
   border-radius: 10px;
   margin: 8px 0;
+}
+
+/* Landing (Opening) Page Design */
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,900'); */
+
+
+.opening * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.opening section
+{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #111; 
+}
+
+.opening .text{
+  position: relative;
+  transform: skewY(345deg) translateY(-200px);
+  animation: animateColor 10s linear infinite;
+}
+
+@keyframes animateColor{
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+.opening .text h2{
+font-weight: bold;
+position: relative;
+width: 100%;
+font-size: 8em;
+color: #FFF;
+pointer-events: none;
+line-height: 1em;
+white-space: nowrap;
+text-shadow: calc(var(--x)) 100px 0 rgba(255,255,255, 0.1);
+transform: translateX(calc(0% - var(--x) * var(--i)));
+}
+
+.opening .text h2 span{
+  color: #0F0;
+  margin: 0 10px;
+}
+
+.opening .text h2 span:nth-of-type(even){
+  color: transparent;
+  -webkit-text-stroke: 2px #FFF;
+
 }
